@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,12 +24,16 @@
         min-height: 55px;
         padding: 0 15px 5px;
     }
-    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
         color:#4285f4;
         background-color: #d1ddf3;
         }
     .navbar-inverse .navbar-nav li a {
-        color:#c0bebe
+        color:#ffffff
+    }
+    .navbar-inverse .navbar-nav li a:hover{
+        color:#4285f4;
+        background-color: #d1ddf3;
     }
     .carousel-caption{
         top:40%;
@@ -49,9 +52,19 @@
     .container{
       margin: 4% auto;
     }
+    .label {
+      padding: 0.2rem 1rem;
+    }
+    .text-justify{
+      text-align: justify;
+    }   
     #icon{
-      max-width: 150px;
-      margin:1% auto;
+      max-width: 130px;
+      margin:10% auto;
+    }
+    .panel .panel-heading{
+      color:#ffffff;
+      background-color: #4285f4;
     }
     footer{
       width:100%;
@@ -61,7 +74,7 @@
     }
     .fa{
       padding: 15px;
-      font-size: 30px;
+      font-size: 20px;
       color:#000000;
     }
     .fa:hover{
@@ -89,14 +102,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/sendrate-logo.png" style="max-width: 150px; margin-top: -4px;"></a>
+            <a class="navbar-brand" href="#index.html"><img src="img/sendrate-logo.png" style="max-width: 150px; margin-top: -4px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">about</a></li>
               <li><a href="#services">services</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
       </div>
@@ -113,17 +126,17 @@
 
         <div class="item active">
           <img src="img/com.jpg">
-          <div class="carousel-caption"><h1>computer</h1></div>
+          <div class="carousel-caption"><h1>Strategize</h1></div>
         </div> <!---End of active-->
 
         <div class="item">
           <img src="img/coffee.jpg">
-          <div class="carousel-caption"><h1>Coffee</h1></div>
+          <div class="carousel-caption"><h1>Go Online</h1></div>
         </div>
         
         <div class="item">
           <img src="img/startup.jpg">
-          <div class="carousel-caption"><h1>Coffee</h1></div>
+          <div class="carousel-caption"><h1>Start big</h1></div>
         </div>
 
         <!--start of slider controls--->
@@ -140,23 +153,29 @@
     </div> <!---- End of slider ---->
 
     <div class="container text-center" id="services">
-      <h2>What we do</h2>
+      <h4><span class="label blue white-text">Our Services</span></h4>
       <div class="row">
         <div class="col-sm-3">
           <img src="img/iconfinder_Google_1298745.png" id="icon">
           <h4>Google Website</h4>
+          <p class="text-justify">As the name implies, the global presence of business could upscale profit    due to the conversion rate of customers presence visiting your business  page.
+            The angle of the website building comes with Google specifics and that alone guarantee wide access and coverage</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center">
           <img src="img/iconfinder_social__media__skype__3046411.png" id="icon">
           <h4>Social Media Page Setup</h4>
+          <p class="text-justify">We set up your social media pages with a close niche of the interweb that helps you closely monitor all performance of the activities on your business page.</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center">
           <img src="img/iconfinder_axe_1805077.png" id="icon">
           <h4>Selfie Business video</h4>
+          
+          <p class="text-justify">Discussing your  Business specifics in a selfie video can and should enable your customers perceive your services in a positive light with onward quarterly reviews of your products.</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center">
           <img src="img/iconfinder_2_google_maps_gps_navigation_traffice_direction_2109131.png" id="icon">
-          <h4>Google Map Presence</h4>
+          <h4>Google Map Presence</h4>       
+          <p class="text-justify">Locating your Business is made possible with Google map and that we do seamless to work out area of coverage.</p>
         </div>
       </div>
     </div>
@@ -165,75 +184,44 @@
       <div class="row">
         <div class="col-sm-6">
           <h3>About</h3>
-          <p>
-            Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-            The possibility of reaching wider audience with little effort is what Shamartech is bringing to you and your Business through our integrated digital marketing.   
-          </p>
-          <p>
-            Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-            The possibility of reaching wider audience with little effort is what Shamartech is bringing to you and your Business through our integrated digital marketing.  
+          <p class="text-justify">
+            Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool. The possibility of reaching wider audience with little effort is what Shamartech is bringing to you and your Business through our integrated digital marketing tagged Go Online.</p>
+
+          <p class="text-justify">Go Online is a well packaged pack from shamartech that guarantee your presence online with wide coverage using Google website built by our experts, setting up of social media presence for your business, a selfie video discussing specifics of your business for up to 3minutes.
           </p>
         </div>
         <div class="col-sm-6">
          <img src="img/client-3691432_1920.jpg" class="img-responsive img-rounded" >
         </div>
       </div>
-    </div>  
-
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-m-3 col-sm-6 col-xs-12">
-            <h4></h4>
-            <p>
-              Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-            </p>
-          </div>
-          <div class="col-lg-3 col-m-3 col-sm-6 col-xs-12">
-           <img src="img/client-3691432_1920.jpg" class="img-responsive img-rounded" class="img">
-          </div>
-          <div class="col-lg-3 col-m-3 col-sm-6 col-xs-12">
-            <h4></h4>
-            <p>
-              Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-            </p>
-          </div>
-          <div class="col-lg-3 col-m-3 col-sm-6 col-xs-12">
-            <img src="img/client-3691432_1920.jpg" class="img-responsive img-rounded" class="img">
-          </div>
-        </div>
-      </div> 
-
-      <div class="container">
-            <h4><a href="#hidden" data-toggle="collapse">Want to learn more about GoOnline?</a></h4>
-            <div id="hidden" class="collapse">
-              <h4>Interesting facts about GoOnline</h4>
-              <p>
-                Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-                The possibility of reaching wider audience with little effort is what Shamartech is bringing to you and your Business through our integrated digital marketing.   
-              </p>
-              <p>
-                Doing business in 21st century requires a different perspective that utilizes the digital space for either upward review of products from the customer opinion pool or the upscale of profit through large audience pool.
-                The possibility of reaching wider audience with little effort is what Shamartech is bringing to you and your Business through our integrated digital marketing.  
-              </p>
-            </div>
-          </div>
-        </div>
-
+    </div> 
+    
         <div class="container">
-          <!-- 16:9 -->
-          <h4>16:9 Aspect Ratio</h4>
-          <div class="embed-responsive embed-responsive-4by3" style="widows: 100px; height: 60px;">
-            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe>
+          <div class="panel panel-warning">
+           <div class="panel-heading">
+             <p class="panel-title">GoOnline</p>
+           </div>
+           <div class="panel-body" style="border: 0.5px solid #4285f4;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/ADPj9pckO3o" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+           </div>
           </div>
+          <div class="col-lg-4 col-lg-offset-4">
           <a href=""><button type="button" class="btn btn-default">Click this button to fill the registration form</button></a>
+          </div>
         </div>
               
-    <footer class="container-fluid text-center">
+    <footer class="container-fluid text-center" id="contacts">
       <div class="row">
         <div class="col-sm-4">
           <h3>Contact us</h3>
           <br>
-          Our Address and Contact info here
+          Our Address and Contact info:
+          <br>
+          08107462898
+          <br>
+          NO 254 Dolphin Estate, Ikoyi, Lagos, Nigeria
         </div>
         <div class="col-sm-4">
           <h4>Follow us on:</h4>
@@ -243,7 +231,7 @@
           <a href="#" class="fa fa-linkedin"></a>
         </div>
         <div class="col-sm-4">
-          <img src="" class="icon">
+          <img src="img/sendrate-logo.png" style="max-width: 150px; margin-top: -4px "class="icon">
         </div>
       </div>
     </footer>
