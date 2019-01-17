@@ -24,6 +24,9 @@
         min-height: 55px;
         padding: 0 15px 5px;
     }
+    .footer-brand{
+      float: right;
+    }
     .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
         color:#4285f4;
         background-color: #000000;
@@ -60,11 +63,11 @@
     }   
     #icon{
       max-width: 130px;
-      margin:10% auto;
+      margin:1% auto;
     }
     .panel .panel-heading{
       color:#ffffff;
-      background-color: #4285f4;
+      background-color: #000000;
     }
     footer{
       width:100%;
@@ -73,22 +76,36 @@
       color:#ffffff;
     }
     .fa{
-      padding: 15px;
+      padding: 20px;
       font-size: 20px;
       color:#fffdfd;
     }
     .fa:hover{
-      color:#189650;
+      color:#095f06;
       text-decoration: none;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
+      footer{
+        text-align: center;
+      }
+      .footer-brand{
+        float:none;
+      }
+    }
+      @media (max-width: 600px) {
       .carousel-caption{
         display:none;
       }
       #icon{
         max-width: 100px;}
       h2 {
-        font-size: 1.9em;
+        font-size: 1.7em;
+      }
+      .navbar-brand{
+        margin-top: 10px;
+      }
+      .navbar-brand img{
+        width: 120px;
       }
     }
     </style>
@@ -102,7 +119,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#index.html"><img src="img/go online ano.png" style="max-width: 140px; margin-top: -45px;"></a>
+            <a class="navbar-brand img-responsive" href="#index.html"><img src="img/go online ano.png" style="max-width: 130px; margin-top: -43px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -215,23 +232,20 @@
     <footer class="container-fluid" id="contacts">
       <div class="row">
         <div class="col-sm-4">
-          <h3>Contact us</h3>
-          <br>
-          Our Address and Contact info:
-          <br>
+          <h4>Contact us:</h4>
           NO 254 Dolphin Estate, Ikoyi, Lagos, Nigeria
           <br>
           08107462898
         </div>
-        <div class="col-sm-4">
-          <h4>Follow us on:</h4>
+        <div class="col-sm-4 text-center">
+          <h4 class="text-center">Follow us on:</h4>
           <a href="https://web.facebook.com/sendratemail/?__tn__=%2Cd%2CP-R&eid=ARB0CZ-G41Ze6K_-QXYltfvA3jHeesax2EAo9KMLT4myloyykgsrjx2QB4H5tntmA-BZjRKNO6Sm5iYb" class="fa fa-facebook"></a>
           <a href="https://twitter.com/sendratemail" class="fa fa-twitter"></a>
           <a href="https://www.instagram.com/sendratemail/" class="fa fa-instagram"></a>
           <a href="https://www.linkedin.com/company/shamartechltd/about/" class="fa fa-linkedin"></a>
         </div>
         <div class="col-sm-4">
-          <img src="img/go online ano.png" style="max-width: 150px; margin-top: -4px "class="icon">
+          <img src="img/go online ano.png" class="footer-brand" style="max-width: 150px">
         </div>
       </div>
     </footer>
